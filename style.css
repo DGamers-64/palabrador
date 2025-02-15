@@ -1,0 +1,113 @@
+* {
+    font-family: monospace;
+    color: white;
+}
+
+html {
+    background-color: black;
+}
+
+#container {
+    margin: auto;
+    width: max-content;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    width: 265px;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+#container-principal {
+    padding: 3rem;
+    margin: 3rem auto auto auto;
+    width: 500px;
+    border: 2px solid white;
+}
+
+input {
+    flex-basis: 100%;
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    background: none;
+    border: 0;
+    z-index: 100;
+    letter-spacing: 28px;
+    padding-left: 10px;
+}
+
+input::selection {
+    background: none;
+}
+
+input:focus-visible {
+    border: 0;
+    outline: 0;
+    caret-color: rgba(0, 0, 0, 0);
+}
+
+.input-letras-contenedor {
+    display: flex;
+    position: absolute;
+}
+
+.input-letras {
+    background-color: rgb(70, 70, 70);
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+}
+
+.input-letras.verde {
+    background-color: green;
+}
+
+.input-letras.amarillo {
+    background-color: goldenrod;
+}
+
+.input-letras.gris {
+    background-color: rgb(29, 29, 29);
+}
+
+.input-letras.seleccionado {
+    background-color: rgb(124, 124, 124);
+}
+
+.div-palabra {
+    display: flex;
+    gap: 10px;
+}
+
+#resultado {
+    text-align: center;
+}
+
+#resultado h1 {
+    font-size: 100px;
+    font-weight: bold;
+    margin: 0
+}
+
+#resultado span {
+    font-size: 30px;
+}
+
+#volver-jugar {
+    font-size: 25px;
+}
+
+#copiar {
+    font-size: 15px;
+}
+
+button {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
